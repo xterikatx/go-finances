@@ -7,11 +7,8 @@
 # Use
 
 1. Clone this project
+    
 
 2. Open terminal and run:
-
-`npm install` or `yarn`
-
-3. Then run
-
-`yarn android` or `npm run android` or use npx 
+    - ```npm install``` or ```yarn```
+    - ```expo start```
