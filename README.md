@@ -1,4 +1,4 @@
-# Go Finance
+# Go Finances
 
 [Link to Figma](https://www.figma.com/file/NjJETCb9Ro6VgujAqtAuRk/GoFinances-Ignite-Copy?node-id=0%3A1)
 
