@@ -7,20 +7,21 @@ import {
   Category,
   Icon,
   CategoryName,
-  Date
+  Date,
 } from "./styles";
+import { Props } from "./types";
 
-export function TransactionCard({}) {
+export function TransactionCard({ data }: Props) {
   return (
     <Container>
-      <Title>Desenvolvimento de sites</Title>
-      <Amount>R$ 10.000,00</Amount>
+      <Title>{data.title}</Title>
+      <Amount>R$ {data.amount}</Amount>
       <Footer>
         <Category>
-          <Icon name="dollar-sign"/>
-          <CategoryName>Vendas</CategoryName>
+          <Icon name="dollar-sign" />
+          <CategoryName>{data.category.name}</CategoryName>
         </Category>
-        <Date>10/10/2021</Date>
+        <Date>{data.date}</Date>
       </Footer>
     </Container>
   );

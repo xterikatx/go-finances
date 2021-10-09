@@ -6,6 +6,7 @@ export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.shape};
   border-radius: 5px;
   padding: 17px 24px;
+  margin-bottom: 16px;
 `;
 
 export const Title = styled.Text`
@@ -40,6 +41,7 @@ export const CategoryName = styled.Text`
   font-size: ${RFValue(14)}px;
   color: ${({ theme }) => theme.colors.text};
   margin-left: 17px;
+  font-family: ${({ theme }) => theme.fonts.regular};
 `;
 
 export const Date = styled.Text`

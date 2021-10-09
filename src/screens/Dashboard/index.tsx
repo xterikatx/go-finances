@@ -14,9 +14,31 @@ import {
   HighlightCards,
   Transactions,
   Title,
+  TransactionsList,
 } from "./styles";
 
 export function Dashboard() {
+  const data = [
+    {
+      title: "Desenvolvimento de site",
+      category: { name: "Vendas", icon: "dollar-sign" },
+      amount: "10.000,00",
+      date: "10/10/2021",
+    },
+    {
+      title: "Salário",
+      category: { name: "Vendas", icon: "dollar-sign" },
+      amount: "800,00",
+      date: "5/10/2021",
+    },
+    {
+      title: "Desenvolvimento de app",
+      category: { name: "Vendas", icon: "dollar-sign" },
+      amount: "3.000,00",
+      date: "12/10/2021",
+    },
+  ];
+
   return (
     <Container>
       <Header>
@@ -58,7 +80,10 @@ export function Dashboard() {
       </HighlightCards>
       <Transactions>
         <Title>Listagem</Title>
-        <TransactionCard />
+        <TransactionsList
+          data={data}
+          renderItem={({ item }) => <TransactionCard data={item} />}
+        />
       </Transactions>
     </Container>
   );
