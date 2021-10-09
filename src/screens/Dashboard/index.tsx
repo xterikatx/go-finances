@@ -22,20 +22,23 @@ export function Dashboard() {
     {
       title: "Desenvolvimento de site",
       category: { name: "Vendas", icon: "dollar-sign" },
-      amount: "10.000,00",
+      amount: "R$ 10.000,00",
       date: "10/10/2021",
+      type: "positive",
     },
     {
       title: "Salário",
       category: { name: "Vendas", icon: "dollar-sign" },
-      amount: "800,00",
+      amount: "R$ 800,00",
       date: "5/10/2021",
+      type: "positive",
     },
     {
-      title: "Desenvolvimento de app",
-      category: { name: "Vendas", icon: "dollar-sign" },
-      amount: "3.000,00",
+      title: "Café",
+      category: { name: "Pagamento", icon: "coffee" },
+      amount: "R$ 3.000,00",
       date: "12/10/2021",
+      type: "negative",
     },
   ];
 
