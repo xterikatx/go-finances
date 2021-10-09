@@ -5,6 +5,8 @@ import {
   getBottomSpace,
   getStatusBarHeight,
 } from "react-native-iphone-x-helper";
+import { DataProps } from "../../components/TransactionCard/types";
+import { FlatList } from "react-native";
 
 export const Container = styled.View`
   flex: 1;
@@ -63,7 +65,7 @@ export const Icon = styled(Feather)`
 
 export const HighlightCards = styled.ScrollView.attrs({
   horizontal: true,
-  showsVerticalScrollIndicator: false,
+  showsHorizontalScrollIndicator: false,
   contentContainerStyle: { paddingHorizontal: 24 },
 })`
   width: 100%;
@@ -83,7 +85,9 @@ export const Title = styled.Text`
   margin-bottom: 16px;
 `;
 
-export const TransactionsList = styled.FlatList.attrs({
+export const TransactionsList = styled(
+  FlatList as new () => FlatList<DataProps>
+).attrs({
   showsVerticalScrollIndicator: false,
   contentContainerStyle: { paddingBottom: getBottomSpace() },
 })``;

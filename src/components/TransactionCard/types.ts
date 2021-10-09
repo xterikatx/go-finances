@@ -3,7 +3,8 @@ export interface Category {
   icon: string;
 }
 
-export interface Data {
+export interface DataProps {
+  id: string;
   type: "positive" | "negative";
   title: string;
   amount: string;
@@ -16,5 +17,5 @@ export interface TransactionProps {
 }
 
 export interface Props {
-  data: Data;
+  data: DataProps;
 }
