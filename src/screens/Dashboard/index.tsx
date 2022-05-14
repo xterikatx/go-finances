@@ -54,7 +54,7 @@ export function Dashboard() {
           <UserInfo>
             <Photo
               source={{
-                uri: "https://media-exp1.licdn.com/dms/image/C4D03AQG1hH8rQkO1zw/profile-displayphoto-shrink_800_800/0/1619218635303?e=1639008000&v=beta&t=tNa3R3tmqUazitsX_L_9uyqh8xJupxhxoIYT_la_NvY",
+                uri: "https://avatars.githubusercontent.com/u/35372047?v=4",
               }}
             />
             <User>
